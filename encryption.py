@@ -188,12 +188,12 @@ class Encryption(object):
             
     def oneTimePad_dec(self):
         '''
-        One-Note Pad encryption adds the 'index' of each input's character in the 
-        dictionary (char_dic) to the 'index' of each key's character (that must
+        One-Note Pad decryption substracts the 'index' of each key's character in the 
+        dictionary (char_dic) to the 'index' of each input's character (that must
         be a string with same length as the input words) to get each encrypted 
         character.
         
-        Returns a string with encrypted characters or error if key's length is 
+        Returns a string with decrypted characters or error if key's length is 
         different than 1.
         '''
         if len(self.key) == len(self.words):
