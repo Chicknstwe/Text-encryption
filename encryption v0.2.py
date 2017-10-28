@@ -148,7 +148,7 @@ class Encryption(object):
                 if newKey >= len(self.val_dic):
                     newKey = newKey - len(self.val_dic)
                 output = output + self.val_dic[str(newKey)]
-            self.msg_enc = output
+            self.enc_msg = output
             print('Encrypted output:' + output)
             self.method = 'Caesar'
         else:
@@ -253,3 +253,4 @@ class Encryption(object):
                 print('Decrypted output: ' + output)
             else:
                 print('Error: words and key must have the same length.')
+            
