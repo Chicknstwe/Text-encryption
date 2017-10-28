@@ -33,7 +33,7 @@ class Encryption(object):
         key: string. Empty string by default.
         char_dic and val_dic: dictionaries used in en/decryption.
         '''
-        self.words = str(words)
+        self.words = str(words).lower()
         self.key = str(key)
         
         self.char_dic = {'a': 0, 'b': 1, 'c': 2, 'd': 3, 'e': 4, 'f': 5, 'g': 6, 'h': 7,
