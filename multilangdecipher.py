@@ -13,7 +13,7 @@ def load_words(file_name):
     '''
     print('Loading word list from file ' + file_name + '.txt...')
     # inFile: file
-    in_file = open(file_name + '.txt', 'r')
+    in_file = open('dics/' + file_name + '.txt', 'r')
     word_list = []
     # line: string
     for line in in_file:
